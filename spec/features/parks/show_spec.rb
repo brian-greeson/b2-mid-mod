@@ -4,7 +4,7 @@ RSpec.describe "when a user visits the parks show page: " do
   it "See name and price of admissions for that amusement park" do
     park1 = Park.create(
       name: "park 1 name",
-      addmission: 50.00
+      price: 50.00
     )
     ride1 = park1.rides.create(
       name: "ride 1 name",

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Mechanic, type: :model do
+RSpec.describe Park, type: :model do
   describe "instance variables" do
     it ".average_ride_rating" do
       park1 = Park.create(

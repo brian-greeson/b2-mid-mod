@@ -18,21 +18,21 @@ RSpec.describe "when a user visits the parks show page: " do
       name: "ride 3 name",
       rating: 3
     )
+    visit "/parks/#{park1.id}"
 
     within "section.park-details" do
       expect(page).to have_content(park1.name)
       expect(page).to have_content("Admissions: $50.00")
     end
+
     within "section.park-rides-list" do
       expect(page).to have_content(ride1.name)
       expect(page).to have_content(ride2.name)
       expect(page).to have_content(ride3.name)
     end
+
     within "section.park-stats" do
       expect(page).to have_content("Average Thrill Rating of Rides: 2.0/10")
     end
-
   end
-
-
 end

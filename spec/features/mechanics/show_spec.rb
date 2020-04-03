@@ -76,7 +76,7 @@ RSpec.describe "when a user visits the mechanics show page: " do
 
     within "section.add-ride-form" do
       fill_in :ride_id, with: "#{ride3.id}"
-      click_link "Assign Ride"
+      click_button "Assign Ride"
     end
 
     expect(current_path).to eq("/mechanics/#{mechanic1.id}")
@@ -88,4 +88,5 @@ RSpec.describe "when a user visits the mechanics show page: " do
       expect(page).to have_content(ride3.name)
     end
   end
+
 end

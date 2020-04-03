@@ -4,7 +4,7 @@ RSpec.describe "when a user visits the mechanics index page: " do
   it "See a header saying 'All Mechanics'" do
     visit "/mechanics"
 
-    within "heading.index-heading" do
+    within "header.index-heading" do
       expect(page).to have_content("All Mechanics")
     end
   end

@@ -1,3 +1,10 @@
 <header class="index-heading">
   <h1>All Mechanics</h1>
 </header>
+<section class="mechanics-list">
+ <% @mechanics.each do |mechanic| %>
+ <ul>
+  <li><%= "#{mechanic.name} - #{mechanic.experience} years of experience" %></li>
+ </ul>
+ <% end %>
+</section>

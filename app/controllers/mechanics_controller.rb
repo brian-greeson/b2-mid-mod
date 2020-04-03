@@ -4,4 +4,7 @@ class MechanicsController < ApplicationController
     @mechanics = Mechanic.all
   end
 
+  def show
+    
+  end
 end
